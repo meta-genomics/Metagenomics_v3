@@ -13,7 +13,7 @@ and maintained by the [Bioinformatics & complex networks lab](https://ira.cinves
  
 ## Pipeline Overview
 
-![My Image](doc/diagramaPipeline_english.png)
+![My Image](doc/pipeline.png)
 
 ## Github Content:
 
