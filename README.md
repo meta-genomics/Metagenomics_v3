@@ -16,6 +16,22 @@ and maintained by the [Bioinformatics & complex networks lab](https://ira.cinves
 
 ![My Image](doc/pipeline.png)
 
+Briefly, the pipeline is divided into the following modules, which perform the following analyses:
+
+**1) Quality Control and Cleaning:** A quality report before and after read cleaning is generated using the FastQC tool. Trimmomatic is used to remove adapters from the reads and trim low-quality ends.
+
+**2) Host Read Cleaning:** Sequences mapping to the reference of host genomes are removed.
+
+**3) Taxonomic Assignment of Reads:** Kraken2 is used to assign a taxonomic identity to each read, and the quantification of reads per organism per sample is performed to report relative abundance as well as alpha and beta diversity of the processed samples.
+
+**4) Metagenome Assembly and MAG Construction:** metaSPAdes is used to assemble reads into contigs, and the contigs are grouped into bins with MaxBin2. These bins are referred to as MAGs (Metagenome-Assembled Genomes).
+
+**5) Taxonomic Classification of MAGs:** The PhyloPhlAn tool is used to perform the taxonomic classification of the genomes ensambled from the reads.
+
+**6) Gene Annotation:** Within each MAG, open reading frames are identified and annotated using the Prokka tool. The search is performed based on the taxonomic classification of the MAG in the previous step (bacteria, archaea, or virus).
+
+**7) Functional Annotation:** The open reading frames identified in the previous step are analyzed to identify similarities with other metabolic genes and annotated with KEGG terms using the eggNOG-Mapper and KofamScan tools.
+
 ## Github Content:
 
 - **install**: Contains a raw file listing the software needed for this pipeline and the instructions for installing it. More detail info on installation is available on the User´s manual.
