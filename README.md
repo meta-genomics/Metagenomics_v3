@@ -8,6 +8,7 @@ In this repository is the pipeline for metagenomic analysis of samples for the C
 
 This pipeline is based on Garfias-Gallegos *et al.*, (2022) Methods in Molecular
 Biology, vol.2512 https://doi.org/10.1007/978-1-0716-2429-6_10, and
+
 Saenz *et al.*, (2022). MIntO: a modular and scalable pipeline for microbiome metagenomic and metatranscriptomic data integration. Frontiers in Bioinformatics, 2, 846922, with modifications, 
 and maintained by the [Bioinformatics & complex networks lab](https://ira.cinvestav.mx/ingenieriagenetica/dra-maribel-hernandez-rosales/bioinformatica-y-redes-complejas/) at CINVESTAV Irapuato 
  
